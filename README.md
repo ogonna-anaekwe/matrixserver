@@ -3,7 +3,7 @@ What this does:
 - [ ] Starts webserver using the configurations in the [config file](https://github.com/ogonna-anaekwe/matrixserver/tree/main/config.yml)
 - [ ] Reads and Validates [matrix data](https://github.com/ogonna-anaekwe/matrixserver/tree/main/matrix.csv). 
 - [ ] Accepts requests on the configured port
-- [ ] Routes request to the appropriate method. There is a method for each route.
+- [ ] Routes request to the appropriate method. There is a method for each route. These are hooked up in [cmd/main.go](https://github.com/ogonna-anaekwe/matrixserver/blob/main/cmd/main.go)
 - [ ] Computes result and display to users.
 
 ## Sequence
@@ -29,12 +29,12 @@ If it fails, it means you're missing at least one dependency. Follow the appropr
 ## Run locally
 **Note:** Every command that follows (with the exception of `git clone ...`) should be run from the root of the project `./matrixserver`.
 
-To run the application: 
+To run: 
 1. Clone the repo:
 ```sh
 git clone git@github.com:ogonna-anaekwe/matrixserver.git
 ```
-2. Start the application (in one terminal and leave the terminal open):
+2. Start the service (in one terminal and leave the terminal open):
 ```sh
 make start
 ```
@@ -53,8 +53,8 @@ After starting the service you can run unit tests with:
 make test
 ```
 
-## Stop Application
-Shut down the application and remove all outputed files and (docker) images/networks:
+## Stop Service
+Shut down the service and remove all outputed files and (docker) images/networks:
 ```sh
 make stop
 ```
