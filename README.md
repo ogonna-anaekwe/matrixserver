@@ -1,6 +1,6 @@
 ## Basic Web Server for Matrix Operations
 What this does:
-- [ ] Starts webserver using the configurations in the [config file](https://github.com/ogonna-anaekwe/matrixserver/tree/main/config.yaml)
+- [ ] Starts webserver using the configurations in the [config file](https://github.com/ogonna-anaekwe/matrixserver/tree/main/config.yml)
 - [ ] Reads and Validates [matrix data](https://github.com/ogonna-anaekwe/matrixserver/tree/main/matrix.csv). 
 - [ ] Accepts requests on the configured port
 - [ ] Routes request to the appropriate method. There is a method for each route.
